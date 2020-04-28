@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import smtplib
 
 # URL and headers are important for this script
-URL = '<Amazon Link>'
+URL = '<Shopping Site Link>'
 # Ask in search engine - what is my user agent - it will give the below result
 headers = {"User-Agent": '<User Agent Details>'}
 
@@ -45,7 +45,7 @@ def send_mail():
     
     # Add Subject and Body that needs to be sent
     subject = 'Price fell down!'
-    body = 'check the amazon link <Amazon Link>'
+    body = 'check the Shopping Site link <Shopping Site Link>'
     
     # Add the subject and body to the message that should be sent
     msg = f"Subject: {subject}\n\n{body}"
